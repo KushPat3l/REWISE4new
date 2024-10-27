@@ -1,0 +1,51 @@
+/* Background color for the entire navbar */
+.bg-body-tertiary {
+    background-color: #1dab8f !important; /* Light green background */
+}
+
+/* Default text color and positioning for pseudo-elements */
+.bg-body-tertiary .navbar-brand,
+.bg-body-tertiary .nav-link {
+    color: #464545; /* Default text color */
+    font-weight:600;
+    position: relative; /* Position pseudo-element relative to the text */
+    display: inline-block; /* Ensure correct positioning */
+    transition: color 250ms ease-in-out; /* Smooth color transition */
+}
+
+/* Navbar.Brand specific styling */
+.bg-body-tertiary .navbar-brand {
+    font-weight: 600;
+    font-size: x-large;
+}
+
+/* Pseudo-element for the hover effect */
+.bg-body-tertiary .navbar-brand::before,
+.bg-body-tertiary .nav-link::before {
+    content: '';
+    display: block;
+    height: 3px; /* Thickness of the hover bar */
+    background-color: rgb(51, 51, 51); /* Color of the bar */
+    position: absolute;
+    top: 0; /* Position the bar at the top of the element */
+    left: 0;
+    width: 0%; /* Initially, the bar is not visible */
+    transition: width ease-in-out 250ms; /* Smooth transition for the bar */
+}
+
+/* Hover and active state styles */
+.bg-body-tertiary .navbar-brand:hover::before,
+.bg-body-tertiary .navbar-brand.active::before,
+.bg-body-tertiary .nav-link:hover::before,
+.bg-body-tertiary .nav-link.active::before {
+    width: 100%; /* Expand the bar to full width on hover or if active */
+}
+
+/* Hover and active state text color and weight */
+.bg-body-tertiary .navbar-brand:hover,
+.bg-body-tertiary .nav-link:hover,
+.bg-body-tertiary .navbar-brand.active,
+.bg-body-tertiary .nav-link.active {
+    color: rgb(51, 51, 51); /* Text color on hover or if active */
+    font-weight: 600; /* Increase font weight on hover or if active */
+}

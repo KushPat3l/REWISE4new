@@ -1,0 +1,178 @@
+/* Add a black background color to the top navigation */
+.Title{
+  top: 0%;
+  background-color: rgb(10, 85, 85);
+  height: 137px;
+}
+
+.page {
+height: 100vh;
+width: 100vw;
+background-color: #0c6681;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  /* height: 200px; */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  height: 25px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #0c6681;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #168f97;
+  color: rgb(255, 255, 255);
+}
+
+.contentcontainer {
+height: calc(100vh - 56px);
+background-color: #282c34;
+/* position: relative; */
+/* padding: 1px; */
+/* flex-grow: 1; */
+}
+
+.textinput {
+position: absolute; 
+bottom: 0;
+height: 50px;
+width: 99%;
+padding: 1px;
+text-align: right;
+}
+
+.chatmessages {
+/* position: absolute;  */
+/* top: 137px; */
+margin-left: auto; 
+margin-right: auto; 
+width: 90%;
+overflow-y: scroll;
+height: calc(100vh - 0px - 150px);;
+padding: 3%;
+}
+
+.chatmessage {
+border-radius: 25px;
+padding: 20px;
+max-width: 70%;
+width: fit-content;
+display: block;
+text-wrap: wrap;
+overflow-wrap: break-word;
+margin-top: 10px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+border-width: medium;
+border-style: solid;
+}
+
+.chatmessage.sent {
+background-color: lightcoral;
+border-color: rgb(140, 67, 67);
+color: rgb(69, 7, 7);
+margin-left: auto;
+}
+
+.chatmessage.rcvd {
+background-color: lightblue;
+border-color: rgb(85, 107, 114);
+color: rgb(6, 54, 68);
+margin-right: auto;
+}
+
+.infobox {
+margin: 30px;
+float: left;
+padding: 5px;
+
+border-style: solid;
+border-color: #333;
+background-color: #aebedd;
+border-width: medium;
+height: fit-content;
+width: 40%;
+/* text-align: center; */
+}
+
+.chatinputbar {
+position: relative;
+border-radius: 8px;
+background-color: #23252b;
+color: #3989a1;
+text-align: right;
+width: 90%;
+height: 30px;
+padding-right: 10px;
+margin-right: 5px;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.chatbutton {
+position: relative;
+border-radius: 100%;
+background-color: #303641;
+color: #3989a1;
+text-align: center;
+width: 30px;
+height: 30px;
+margin-right: 5px;
+font-family: 'Courier New', Courier, monospace;
+transition-duration: 400ms;
+}
+
+.chatbutton:hover {
+background-color: #566073;
+}
+
+.chatbutton:disabled {
+background-color: #23252b;
+color: #1a434f;
+}
+
+
+
+.chatmessageQ {
+  border-radius: 25px;
+  padding: 20px;
+  max-width: 70%;
+  width: fit-content;
+  display: block;
+  text-wrap: wrap;
+  overflow-wrap: break-word;
+  margin-top: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  border-width: medium;
+  border-style: solid;
+  }
+  
+  .chatmessageQ.sent {
+  background-color: rgb(13, 209, 95);
+  border-color: rgb(7, 121, 41);
+  color: rgb(4, 78, 43);
+  margin-left: auto;
+  }
+  
+  .chatmessageQ.rcvd {
+  background-color: rgb(230, 227, 55);
+  border-color: rgb(137, 139, 14);
+  color: rgb(90, 105, 7);
+  margin-right: auto;
+  }
